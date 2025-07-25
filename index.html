@@ -1,55 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/final_project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/final_project.css" />
     <script src="./assets/js/final_project.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="header_section">
-            <h2 class="heading" id="headerText"></h2>
-            <h3 class="subheading" id="subheadingText"></h3>
+      <div class="header_section">
+        <h2 class="heading" id="headerText"></h2>
+        <h3 class="subheading" id="subheadingText"></h3>
 
-            <img src="./assets/img/header_background_logo.png" alt="">
+        <img src="./assets/img/header_background_logo.png" alt="" />
+      </div>
+
+      <div class="view_card_section">
+        <h3 class="productName" id="productNameText"></h3>
+
+        <input
+          class="pageView"
+          id="rangeAmount"
+          type="range"
+          min="20000"
+          max="200000"
+          step="20000"
+        />
+
+        <div class="price">
+          <h1 class="priceLast" id="finalPrice">$00.00</h1>
+          <h3 class="monthYear" id="monthOrYear">/ month</h3>
         </div>
 
-        <div class="view_card_section">
-            <h3 class="productName" id="productNameText"></h3>
+        <div class="monthly_or_yearly">
+          <h3 class="monthlyBilling" id="monthlyBillingText"></h3>
 
-            <input class="pageView" id="rangeAmount" type="range" min="20000" max="200000" step="20000">
-            
-            <div class="price">
-                <h1 class="priceLast" id="finalPrice">$00.00</h1>
-                <h3 class="monthYear" id="monthOrYear">/ month</h3>
-            </div>
+          <label class="switch">
+            <input type="checkbox" id="checkbox" name="checkbox" />
+            <span class="slider round"></span>
+          </label>
 
-            <div class="monthly_or_yearly">
-                <h3 class="monthlyBilling" id="monthlyBillingText"></h3>
-
-                <label class="switch">
-                    <input type="checkbox" id="checkbox" name="checkbox">
-                    <span class="slider round"></span>
-                </label>
-
-                <h3 class="yearlyBilling" id="yearlyBillingText">&nbsp;&nbsp;&nbsp;&nbsp;<span>-25%</span></h3>
-            </div>
-
-            <div class="bottom_section">
-                <ul>
-                    <li id="unlimitedText"></li>
-                    <li id="dataText"></li>
-                    <li id="EmailText"></li>
-                </ul>
-    
-                <button class="my_trial" id="myTrial">Start my trial</button>
-            </div>
+          <h3 class="yearlyBilling" id="yearlyBillingText">
+            &nbsp;&nbsp;&nbsp;&nbsp;<span>-25%</span>
+          </h3>
         </div>
+
+        <div class="bottom_section">
+          <ul>
+            <li id="unlimitedText"></li>
+            <li id="dataText"></li>
+            <li id="EmailText"></li>
+          </ul>
+
+          <button class="my_trial" id="myTrial">Start my trial</button>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
